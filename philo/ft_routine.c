@@ -6,7 +6,7 @@
 /*   By: aaggoujj <aaggoujj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:04:24 by aaggoujj          #+#    #+#             */
-/*   Updated: 2022/06/02 20:06:15 by aaggoujj         ###   ########.fr       */
+/*   Updated: 2022/06/03 21:13:40 by aaggoujj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_routine(void *data)
 
 	philo = (t_philo *)data;
 	if (philo->id % 2 == 1)
-		usleep(500);
+		usleep(50);
 	while (1)
 	{
 		ft_fork(philo, 'R');

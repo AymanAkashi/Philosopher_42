@@ -6,7 +6,7 @@
 /*   By: aaggoujj <aaggoujj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/22 08:35:19 by aaggoujj          #+#    #+#             */
-/*   Updated: 2022/05/29 18:17:14 by aaggoujj         ###   ########.fr       */
+/*   Updated: 2022/06/03 21:13:29 by aaggoujj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ t_bool	data_init(char **av, int ac, t_data *data)
 		data->all_time_eat = -1;
 	data->id_philo = 0;
 	data->time_ate = 0;
+	if(ft_atoi(av[1]) == 0)
+		return (FALSE);
 	data->num_philo = ft_atoi(av[1]);
 	data->time_to_die = ft_atoi(av[2]);
 	data->time_to_eat = ft_atoi(av[3]);

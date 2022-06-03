@@ -6,7 +6,7 @@
 /*   By: aaggoujj <aaggoujj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 10:00:11 by aaggoujj          #+#    #+#             */
-/*   Updated: 2022/06/02 21:17:17 by aaggoujj         ###   ########.fr       */
+/*   Updated: 2022/06/03 21:14:15 by aaggoujj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_bool	check_philo_dead(t_philo *philo)
 
 	time_death = philo->save_data->time_to_die;
 	now = get_time(philo->save_data->init_time);
-	if (now - philo->last_time_eat >= time_death + philo->last_time_eat)
+	if (now - philo->last_time_eat >= time_death)
 	{
 		ft_write_operation(philo, NULL, now);
 		philo->save_data->set_someone_die = TRUE;
